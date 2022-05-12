@@ -119,7 +119,6 @@ body {
 }
 
 .header-contact-item {
-    /* display: inline-flex; */
     margin-right: 50px;
 }
 
@@ -129,6 +128,8 @@ body {
 
 .header-contact.link {
     color: var(--main-text-color); 
+    display: flex;
+    align-items: center;
 }
 
 .menu.link:hover,
@@ -140,13 +141,22 @@ body {
     color: var(--hover-color);
 }
 
-/* .envelope {
-    display: inline-flex;
-    align-items: center;
+.header-icon {
+    display: inline-block;
+    margin-right: 10px;
+    
+    fill: currentColor;
+}
+
+.envelope {
     width: 16px;
     height: 12px;
-    margin-right: 10px;
-} */
+}
+
+.smartphone {
+    width: 10px;
+    height: 16px;
+}
 
 .banner {
     padding-top: 200px;
@@ -345,13 +355,13 @@ body {
     margin-bottom: 0;
 }
 
-.network-item:not(:last-child) {
-    margin-right: 10px;
-}
-
 .network-item {
     width: 44px;
     height: 44px;
+}
+
+.network-item:not(:last-child) {
+    margin-right: 10px;
 }
 
 .network-link {
@@ -372,6 +382,47 @@ body {
     fill: currentColor;
     width: 20px;
     height: 20px;
+}
+
+.customers-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+ .customers-item {
+    box-sizing: border-box;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+} 
+
+.customers-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.customers-item:hover,
+.customers-item:focus {
+    border-color: #2196F3;
+}
+
+.customers-link {
+    display: inline-block;
+    padding: 16px 32px;
+    color: #afb1b8;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    color: #2196F3;
+    /* border-color: #2196F3; */
+}
+
+.customer-icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
 }
 
 .page-footer {
@@ -499,6 +550,7 @@ body {
 .btn-filter:focus {
     color: var(--accent-color);
     background-color: var(--hover-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .work.list {
@@ -525,4 +577,9 @@ body {
     border-left: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     padding: 20px 24px;
+}
+
+.work-item:hover,
+.work-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
