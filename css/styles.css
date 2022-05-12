@@ -468,6 +468,7 @@ body {
 
 .footer-information {
     display: flex;
+    align-items: baseline;
 }
 
 .join > b {
@@ -476,7 +477,6 @@ body {
     color: var(--accent-color);
 
     display: block;
-    padding-top: 12px;
     margin-bottom: 20px;
 }
 
